@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>850</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Криптография</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="simcomboBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Атбаш</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Сцитала</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Квадрат Полибия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Цезарь</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Кардано</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ришелье</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Диск Альберти</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Гронсфельд</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Вижинер</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Плейфер</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Хилл</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Вернам</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Метод гаммирования</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Частотный криптоанализ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Полиалфавитный криптоанализ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DES</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ГОСТ 28147-89</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Выберите категорию:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>140</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ок</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Выберите шифр:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="asimradioButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>30</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Асимметричные шифры</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="simradioButton">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Симметричные шифры</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="asimcomboBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>80</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Теория чисел</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RSA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Диффи-Хеллман</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Шифр Шамира</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Шифр Эль-Гамаля</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
